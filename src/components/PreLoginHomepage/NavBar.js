@@ -28,7 +28,7 @@ function NavBar(){
             <a className="nav-link" href="team.html">Team</a>
           </li> */}
           <li className="nav-item">
-            <a className="nav-link" href="contact.html">Contact Us</a>
+            <a className="nav-link" href="contact.html">Contact</a>
           </li>
 
           {/* <li className="nav-item">
@@ -36,7 +36,11 @@ function NavBar(){
           </li> */}
 
             <li className="nav-item">
-              <a className="nav-link"><Link to="/login" style={{color:"black", textDecoration:"none"}}>Login/SignUp</Link></a>
+              <a className="nav-link"><Link to="/login" style={{color:"black", textDecoration:"none"}}>Login</Link></a>
+            </li>
+
+            <li className="nav-item">
+              <a className="nav-link"><Link to="/register" style={{color:"black", textDecoration:"none"}}>Register</Link></a>
             </li>
         </ul>
       </div>
