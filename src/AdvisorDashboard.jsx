@@ -36,13 +36,15 @@ function App() {
         <Route path ="/" element= {<HomePage />}/>
         <Route path ="/login" element= {<Loginpage />}/>
         <Route path ="/register" element= {<Registerpage/>}/>
+        <Route path="/client_landing" element={<Client_landing/>} />
+            <Route path="/client_landing" element={<Client_landing/>} />
+
           <Route element={<BaseLayout />}>
             <Route path="/advisor_dashboard" element={<Dashboard />} />
             <Route path="/clientlist" element={<Clientlist/>} />
             {/* <Route path="/transaction" element={<Transaction/>} />   */}
            {/* <Route path="/queries" element={<Queries/>} /> */}
             <Route path="/plan" element={<Plans/>} />
-            <Route path="/client_landing" element={<Client_landing/>} />
           </Route>
         </Routes>
 
