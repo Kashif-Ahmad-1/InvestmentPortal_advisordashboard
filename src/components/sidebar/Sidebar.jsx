@@ -7,7 +7,7 @@ import {
   // MdOutlineAttachMoney,
   // MdOutlineBarChart,
   MdOutlineClose,
-  MdOutlineCurrencyExchange,
+  // MdOutlineCurrencyExchange,
   MdOutlineGridView,
   MdOutlineLogout,
   MdOutlineMessage,
@@ -88,7 +88,7 @@ const Sidebar = () => {
             <li className="menu-item">
               <Link to="/transaction" className="menu-link">
                 <span className="menu-link-icon">
-                  <MdOutlineCurrencyExchange size={18} />
+                  <MdOutlineClose size={18} />
                 </span>
                 <span className="menu-link-text">Transactions</span>
               </Link>

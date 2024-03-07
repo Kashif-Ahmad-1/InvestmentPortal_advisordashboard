@@ -1,70 +1,162 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT LOGO -->
+                
+<div align="center">
 
-## Available Scripts
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-In the project directory, you can run:
+<br />
+<br />
 
-### `npm start`
+  <a href="https://investapp.oscargonzalez.dev">
+    <img src="./public/images/investapp-logo.png" width="300px" alt="Investapp">
+  </a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  <p align="center">
+    Investment Dashboard
+    <br />
+    <a href="https://investapp.oscargonzalez.dev">View Demo</a>
+    ·
+    <a href="https://github.com/oscargonzalezdev/investment-dashboard-client/issues/new">Report Bug</a>
+    ·
+    <a href="https://www.buymeacoffee.com/oscardev">Support</a>
+  </p>
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br/>
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#links">Links</a></li>
+  </ol>
+</details>
 
-### `npm test`
+<br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-### `npm run build`
+[![Alt text](./public/images/investapp-screenshot.png)](https://investapp.oscargonzalez.dev)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Investapp is a client-side web application that allows users simulate trading stocks with a starting balance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Built With
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* <strong>React</strong> for UI building.
+* <strong>Plotly.js</strong> for data visualization.
+* <strong>Chackra UI</strong> for UI styling.
+* <strong>JavaScript, HTML, CSS</strong> as a general stack to build web applications.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- GETTING STARTED -->
+## Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To get and run a local copy of this project follow the instructions below.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repo
+   ```sh
+   git clone https://github.com/oscargonzalezdev/investment-dashboard-client.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Run the project locally
+   ```sh
+   npm start
+   ```
 
-## Learn More
+<!-- ROADMAP -->
+## Roadmap
+- [X] Layout component.
+- [X] Welcomme component to set name and initial deposit.
+- [x] Stock section to show trending stocks
+- [X] Investments section to diplay a list of transactions.
+- [X] Wallet section to manage deposits and transfers.
+- [X] News section to display top and breaking news.
+- [X] Overview section containing a selection of components.
+- [X] Search functionality for stocks.
+- [X] Watchlist component.
+- [ ] Component to show investment performance.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+See the [open issues](https://github.com/oscargonzalezdev/investment-dashboard-client/issues) for a full list of proposed features (and known issues).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+<!-- CONTRIBUTING -->
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-### Analyzing the Bundle Size
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+<!-- LICENSE -->
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!-- CONTACT -->
+## Author
 
-### `npm run build` fails to minify
+[www.oscargonzalez.dev](https://oscargonzalez.dev) |
+[LinkedIn](https://linkedin.com/in/oscargonzalezdev) |
+[Twitter](https://twitter.com/oscardev_)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<!-- RESOURCES -->
+## Links
+
+- GitHub repository: [https://github.com/oscargonzalezdev/investment-dashboard-client](https://github.com/oscargonzalezdev/investment-dashboard-client)
+- Demo: [https://investapp.oscargonzalez.dev](https://investapp.oscargonzalez.dev)
+  
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/oscargonzalezdev/investment-dashboard-client.svg?style=for-the-badge
+[contributors-url]: https://github.com/oscargonzalezdev/investment-dashboard-client/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/oscargonzalezdev/investment-dashboard-client.svg?style=for-the-badge
+[forks-url]: https://github.com/oscargonzalezdev/investment-dashboard-client/network/members
+[stars-shield]: https://img.shields.io/github/stars/oscargonzalezdev/investment-dashboard-client.svg?style=for-the-badge
+[stars-url]: https://github.com/oscargonzalezdev/investment-dashboard-client/stargazers
+[issues-shield]: https://img.shields.io/github/issues/oscargonzalezdev/investment-dashboard-client.svg?style=for-the-badge
+[issues-url]: https://github.com/oscargonzalezdev/investment-dashboard-client/issues
+[license-shield]: https://img.shields.io/github/license/oscargonzalezdev/investment-dashboard-client.svg?style=for-the-badge
+[license-url]: https://github.com/oscargonzalezdev/investment-dashboard-client/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/oscargonzalezdev

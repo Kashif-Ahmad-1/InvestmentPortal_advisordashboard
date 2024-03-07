@@ -9,7 +9,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { ThemeContext } from "../../../context/ThemeContext";
-import { FaArrowUpLong } from "react-icons/fa6";
+// import { FaArrowUpLong } from "react-icons/fa6";
 import { LIGHT_THEME } from "../../../constants/themeConstants";
 import "./AreaCharts.scss";
 
@@ -83,7 +83,7 @@ const AreaBarChart = () => {
         <div className="chart-info-data">
           <div className="info-data-value">$50.4K</div>
           <div className="info-data-text">
-            <FaArrowUpLong />
+           
             <p>5% than last month.</p>
           </div>
         </div>
