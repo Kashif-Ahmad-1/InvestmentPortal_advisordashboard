@@ -3,7 +3,6 @@ import "../areaTable/AreaTable.scss";
 import AreaTableAction from "../areaTable/AreaTableAction";
 
 const TABLE_HEADS = [
-  "planId",
   "stock",
   "buyAt",
   "sellAt",
@@ -38,7 +37,7 @@ const Plans = () => {
   return (
     <section className="content-area-table">
       <div className="data-table-info">
-        <h4 className="data-table-title">Plan 1</h4>
+        <h4 className="data-table-title">high risk</h4>
       </div>
       <div className="data-table-diagram">
         <table>
@@ -53,7 +52,6 @@ const Plans = () => {
             {tableData.map((planlist) => {
               return (
                 <tr key={planlist.planId}>
-                  <td>{planlist.planId}</td>
                   <td>{planlist.stock}</td>
                   <td>{planlist.buyAt}</td>
                   <td>{planlist.sellAt}</td>

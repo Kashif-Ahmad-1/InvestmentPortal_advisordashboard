@@ -1,4 +1,4 @@
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import "../areaTable/AreaTable.scss";
 import AreaTableAction from "../areaTable/AreaTableAction";
 
@@ -56,7 +56,10 @@ const Clientlist = () => {
                   <td>{clientlist.UserID}</td>
                   <td>{clientlist.name}</td>
                   <td>{clientlist.Invested}</td>
-                  <td>{clientlist.Returns}</td>
+                  {/* <td>{clientlist.Returns}</td> */}
+                  <td>
+                    <span className={`abc-${clientlist.Returns>0?'positive':'negative'}`}>{clientlist.Returns}</span>
+                  </td>   
                   <td>{clientlist.Date}</td>
                   
                   {/* <td>${purchase.amount.toFixed(2)}</td> Corrected variable name */}
@@ -77,7 +80,6 @@ export default Clientlist;
 
 
   
-
 
 
 
