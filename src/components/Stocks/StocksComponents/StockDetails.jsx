@@ -184,10 +184,10 @@ function StockDetails({ symbol2, title, w }) {
                                     </Box>
                                 </Box>
                                 <StockChart chartData={chartData} />
-                                <Box display='flex' justifyContent='space-between' gap='30px'>
+                                {/* <Box display='flex' justifyContent='space-between' gap='30px'>
                                     <Button isDisabled={getBoughtStocks() < 1} w='50%' ref={btnRef} colorScheme='red' onClick={() => openSell()}>Sell</Button>
                                     <Button w='50%' ref={btnRef} colorScheme='green' onClick={() => openBuy()}>Buy</Button>
-                                </Box>
+                                </Box> */}
                             </Box>
                             <Box display='flex' justifyContent='center' alignItems='center' gap='10px'>
                                 <Drawer

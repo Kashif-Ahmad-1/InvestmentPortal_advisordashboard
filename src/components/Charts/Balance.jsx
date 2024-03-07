@@ -14,7 +14,7 @@ function Balance() {
                     {
                         type: "indicator",
                         mode: "number+delta",
-                        value: balance,
+                        value: 6000,
                         number: { prefix: "€", font: {size: 42} },
                         delta: { font: {size: 20} ,position: "button", reference: wallet.deposit},
                         domain: { x: [0, 1], y: [0, 1] }

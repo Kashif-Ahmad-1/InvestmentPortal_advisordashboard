@@ -104,31 +104,7 @@ const Plans = () => {
     fetchData();
   }, []);
 
-  // useEffect(() => {
-  // const fetchData = async () => {
-  //   try {
-  //     const apiUrl = 'http://localhost:8000/api/data';
-  //     const username = 'Subham@gmail.com';
-  //     const password = 'test@123';
-  //     const headers = new Headers();
-  //     headers.append('Authorization', 'Basic ' + btoa(username + ":" + password));
-  
-  //     const response = await fetch(apiUrl, {
-  //       method: 'GET',
-  //       headers: headers
-  //     });
-  //             if (!response.ok) {
-  //         throw new Error(`HTTP error! status: ${response.status}`);
-  //       }
-  //       const jsonData = await response.json();
-  //       setTableData(jsonData);
-  //     } catch (error) {
-  //       console.error('Error fetching data from API:', error);
-  //     }
-  //     // Rest of your fetch logic
-  //   } 
-  //   fetchData(); 
-  // }, []);
+ 
 
   return (
     <section className="content-area-table">
@@ -166,6 +142,8 @@ const Plans = () => {
 };
 
 export default Plans;
+
+
 
 
 

@@ -36,7 +36,7 @@ function Loginpage() {
 
                 // Redirect based on the user role
                 if (data.user.role === 'client') {
-                    navigate('/Client_landing'); // Redirect to user dashboard
+                    navigate('/client_dashboard'); // Redirect to user dashboard
                 } else if (data.user.role === 'advisor') {
                     navigate('/advisor_dashboard'); // Redirect to advisor dashboard
                 }

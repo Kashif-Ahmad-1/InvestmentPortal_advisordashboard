@@ -1,0 +1,24 @@
+[
+    {
+      "planId": 1,
+      "stock": "Stock1",
+      "buyAt": 51,
+      "sellAt": 61,
+      "stopLoss": 46
+    },
+    {
+      "planId": 2,
+      "stock": "Stock2",
+      "buyAt": 52,
+      "sellAt": 62,
+      "stopLoss": 47
+    },
+    {
+      "planId": 3,
+      "stock": "Stock3",
+      "buyAt": 53,
+      "sellAt": 63,
+      "stopLoss": 48
+    }
+    
+]
