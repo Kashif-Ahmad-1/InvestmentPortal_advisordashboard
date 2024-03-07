@@ -33,16 +33,16 @@ import SunIcon from "./assets/icons/sun.svg";
 
 function App() {
   const { user } = useContext(DataContext);
-  // const { theme, toggleTheme } = useContext(ThemeContext);
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
-  // // adding dark-mode class if the dark mode is set on to the body tag
-  // useEffect(() => {
-  //   if (theme === DARK_THEME) {
-  //     document.body.classList.add("dark-mode");
-  //   } else {
-  //     document.body.classList.remove("dark-mode");
-  //   }
-  // }, [theme]);
+  // adding dark-mode class if the dark mode is set on to the body tag
+  useEffect(() => {
+    if (theme === DARK_THEME) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+  }, [theme]);
   return (
     <>
       <Routes>
@@ -74,7 +74,7 @@ function App() {
 
         
       </Routes>
-      {/* <button
+      <button
           type="button"
           className="theme-toggle-btn"
           onClick={toggleTheme}
@@ -83,7 +83,7 @@ function App() {
             className="theme-icon"
             src={theme === LIGHT_THEME ? SunIcon : MoonIcon}
           />
-        </button> */}
+        </button>
     </>
   );
 }

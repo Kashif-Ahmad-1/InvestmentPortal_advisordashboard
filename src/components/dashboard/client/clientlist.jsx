@@ -15,25 +15,42 @@ const TABLE_HEADS = [
 const Clientlist = () => {
   const [tableData, setTableData] = useState([]);
 
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('./clientlist.json'); // Assuming the JSON file is named purchase.json and placed in the public folder
+        // Update this URL to your actual API endpoint
+        const apiUrl = 'http://localhost:3000/clients';
+        const response = await fetch(apiUrl);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
         const jsonData = await response.json();
         setTableData(jsonData);
-      } 
-      
-      // {
-      //   const response = await axios.get('http://localhost:5000/api/data'); // api link
-      //   setData(response.data);
-      // }
-
-      catch (error) {
-        console.error('Error fetching data:', error);
+      } catch (error) {
+        console.error('Error fetching data from API:', error);
       }
     };
     fetchData();
   }, []);
+
+
+
+  const deleteClient = async (userId) => {
+    try {
+      const response = await fetch(`http://localhost:3000/clients/${userId}`, {
+        method: 'DELETE',
+      });
+      if (response.ok) {
+        // Filter out the deleted client from the table data
+        setTableData(tableData.filter(client => client.UserID !== userId));
+      } else {
+        throw new Error(`Failed to delete client with UserID ${userId}.`);
+      }
+    } catch (error) {
+      console.error('Error deleting client:', error);
+    }
+  };
 
   return (
     <section className="content-area-table">
@@ -50,20 +67,22 @@ const Clientlist = () => {
             </tr>
           </thead>
           <tbody>
-            {tableData.map((clientlist) => {
+            {tableData.map((client) => {
               return (
-                <tr key={clientlist.UserID}>
-                  <td>{clientlist.UserID}</td>
-                  <td>{clientlist.name}</td>
-                  <td>{clientlist.Invested}</td>
+                <tr key={client.UserID}>
+                  <td>{client.UserID}</td>
+                  <td>{client.name}</td>
+                  <td>{client.Invested}</td>
                   {/* <td>{clientlist.Returns}</td> */}
                   <td>
-                    <span className={`abc-${clientlist.Returns>0?'positive':'negative'}`}>{clientlist.Returns}</span>
+                    <span className={`abc-${client.Returns>0?'positive':'negative'}`}>{client.Returns}</span>
                   </td>   
-                  <td>{clientlist.Date}</td>
+                  <td>{client.Date}</td>
                   
                   {/* <td>${purchase.amount.toFixed(2)}</td> Corrected variable name */}
                   <td className="dt-cell-action">
+                  <button onClick={() => alert('Edit functionality not implemented')}>Edit</button>
+                    <button onClick={() => deleteClient(client.UserID)}>Delete</button>
                     <AreaTableAction />
                   </td>
                 </tr>
