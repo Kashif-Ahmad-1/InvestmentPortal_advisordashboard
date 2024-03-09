@@ -33,7 +33,7 @@ const Sidebar = () => {
       !navbarRef.current.contains(event.target) &&
       event.target.className !== "sidebar-oepn-btn"
     ) {
-      closeSidebar();
+      // closeSidebar();
     }
   };
 

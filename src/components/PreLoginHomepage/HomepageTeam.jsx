@@ -1,5 +1,8 @@
 // import React from "react";
-
+import team1 from './../../assest/images/team1.jpg'
+import team2 from './../../assest/images/team2.jpg'
+import team3 from './../../assest/images/team3.jpg'
+import team4 from './../../assest/images/team4.jpg'
 function HomepageTeam(){
     return(
         <section className="team_section layout_padding">
@@ -15,7 +18,7 @@ function HomepageTeam(){
           <div className="col-lg-3 col-sm-6">
             <div className="box ">
               <div className="img-box">
-                <img src="images/team-1.jpg" className="img1" alt="" />
+                <img src={team1} className="img1" alt="" />
               </div>
               <div className="detail-box">
                 <h5>
@@ -47,7 +50,7 @@ function HomepageTeam(){
           <div className="col-lg-3 col-sm-6">
             <div className="box ">
               <div className="img-box">
-                <img src="images/team-2.jpg" className="img1" alt="" />
+                <img src={team2} className="img1" alt="" />
               </div>
               <div className="detail-box">
                 <h5>
@@ -79,7 +82,7 @@ function HomepageTeam(){
           <div className="col-lg-3 col-sm-6">
             <div className="box ">
               <div className="img-box">
-                <img src="images/team-3.jpg" className="img1" alt="" />
+                <img src={team3} className="img1" alt="" />
               </div>
               <div className="detail-box">
                 <h5>
@@ -111,7 +114,7 @@ function HomepageTeam(){
           <div className="col-lg-3 col-sm-6">
             <div className="box ">
               <div className="img-box">
-                <img src="images/team-4.jpg" className="img1" alt="" />
+                <img src={team4} className="img1" alt="" />
               </div>
               <div className="detail-box">
                 <h5>

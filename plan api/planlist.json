@@ -19,6 +19,13 @@
       "buyAt": 53,
       "sellAt": 63,
       "stopLoss": 48
+    },
+    {
+      "planId": 3,
+      "stock": "Stock3",
+      "buyAt": 53,
+      "sellAt": 63,
+      "stopLoss": 48
     }
     
 ]

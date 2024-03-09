@@ -85,3 +85,16 @@ router.post('/', (req, res) => {
 });
 
 module.exports = router;
+
+
+
+
+// const express = require('express');
+// const { getClientList, addClient, deleteClient } = require('../controllers/clientController');
+// const router = express.Router();
+
+// router.get('/', getClientList);
+// router.post('/', addClient);
+// router.delete('/:userId', deleteClient);
+
+// module.exports = router;

@@ -1,5 +1,5 @@
 // import React from "react";
-
+import client1 from './../../assest/images/client1.jpg'
 function HomepageClient(){
     return(
 
@@ -15,7 +15,7 @@ function HomepageClient(){
           <div className="item">
             <div className="box">
               <div className="img-box">
-                <img src="images/client1.jpg" alt="" className="box-img" />
+                <img src={client1} alt="" className="box-img" />
               </div>
               <div className="detail-box">
                 <div className="client_id">

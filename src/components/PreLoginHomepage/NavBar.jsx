@@ -16,24 +16,20 @@ function NavBar(){
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item">
-            <a className="nav-link" href="index.html">Home</a>
+            <a className="nav-link" ><Link to="/">Home</Link></a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="about.html">About</a>
+            <a className="nav-link" ><Link to="/about" >About</Link></a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="services.html">Services</a>
+            <a className="nav-link"><Link to='/services'>Services</Link></a>
           </li>
-          {/* <li className="nav-item">
-            <a className="nav-link" href="team.html">Team</a>
-          </li> */}
+          
           <li className="nav-item">
-            <a className="nav-link" href="contact.html">Contact</a>
+            <a className="nav-link"><Link to='/contact'>Contact</Link></a>
           </li>
 
-          {/* <li className="nav-item">
-            <a className="nav-link" href="contact.html">Login/SignUp</a>
-          </li> */}
+        
 
             <li className="nav-item">
               <a className="nav-link"><Link to="/login" style={{color:"black", textDecoration:"none"}}>Login</Link></a>
@@ -58,10 +54,7 @@ function NavBar(){
     <img src={robot} className="banner_img" />
   </div>
 </div>
-       
-    {/* <div classNameName="slider">
-            <Slider/>
-    </div> */}
+  
 
     </div>
     )

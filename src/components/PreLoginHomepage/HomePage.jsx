@@ -1,11 +1,10 @@
-// import React from "react";
-// import  { useEffect } from 'react';
+
 
 import Service from "./Service";
 import HomepageWhy from "./HomepageWhy";
 import HomepageTeam from "./HomepageTeam"
 import HomepageAbout from "./HomepageAbout";
-import HomepageClient from "./HomepageClient";
+// import HomepageClient from "./HomepageClient";
 import HomepageInfo from "./HomepageInfo";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
@@ -36,7 +35,7 @@ function HomePage(){
             <HomepageAbout />
             <HomepageWhy />
             <HomepageTeam />
-            <HomepageClient />
+            {/* <HomepageClient /> */}
             <HomepageInfo />
             <Footer />
 

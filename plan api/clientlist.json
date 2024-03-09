@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "name": "Kashif Ahmad",
+    "Invested": "124",
+    "Returns": "2423",
+    "Date": "2024-03-07",
+    "UserID": 4
+  },
+  {
+    "name": "shubham",
+    "Invested": "24234",
+    "Returns": "12",
+    "Date": "2024-03-06",
+    "UserID": 5
+  }
+]
