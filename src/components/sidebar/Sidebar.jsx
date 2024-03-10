@@ -3,6 +3,7 @@ import { ThemeContext } from "../../context/ThemeContext";
 import { LIGHT_THEME } from "../../constants/themeConstants";
 import LogoBlue from "../../assets/images/logo_blue.svg";
 import LogoWhite from "../../assets/images/logo_white.svg";
+import { NavLink } from "react-router-dom";
 import {
   // MdOutlineAttachMoney,
   // MdOutlineBarChart,
@@ -56,7 +57,7 @@ const Sidebar = () => {
         <Box className={styles.logo} ><Logo size='1.5rem' /></Box>
           {/* <span className="sidebar-brand-text">inVEST</span> */}
         </div>
-        <button className="sidebar-close-btn" onClick={closeSidebar}>
+        <button className="sidebar-close-btn" onClick={closeSidebar} >
           <MdOutlineClose size={24} />
         </button>
       </div>
@@ -64,12 +65,12 @@ const Sidebar = () => {
         <div className="sidebar-menu">
           <ul className="menu-list">
             <li className="menu-item">
-              <Link to="/advisor_dashboard" className="menu-link active">
+              <NavLink to="/advisor_dashboard" className="menu-link ">
                 <span className="menu-link-icon">
                   <MdOutlineGridView size={18} />
                 </span>
                 <span className="menu-link-text">Dashboard</span>
-              </Link>
+              </NavLink>
             </li>
             {/* <li className="menu-item">
               <Link to="/" className="menu-link">
@@ -88,28 +89,28 @@ const Sidebar = () => {
               </Link>
             </li> */}
             <li className="menu-item">
-              <Link to="/transaction" className="menu-link">
+              <NavLink to="/transaction" className="menu-link ">
                 <span className="menu-link-icon">
                   <MdOutlineClose size={18} />
                 </span>
                 <span className="menu-link-text">Transactions</span>
-              </Link>
+              </NavLink>
             </li>
             <li className="menu-item">
-              <Link to="/plan" className="menu-link">
+              <NavLink to="/plan" className="menu-link">
                 <span className="menu-link-icon">
                   <MdOutlineShoppingBag size={20} />
                 </span>
                 <span className="menu-link-text">Plans</span>
-              </Link>
+              </NavLink>
             </li>
             <li className="menu-item">
-              <Link to="/Clientlist" className="menu-link">
+              <NavLink to="/Clientlist" className="menu-link">
                 <span className="menu-link-icon">
                   <MdOutlinePeople size={20} />
                 </span>
                 <span className="menu-link-text">Clients</span>
-              </Link>
+              </NavLink>
             </li>
             {/* <li className="menu-item">
               <Link to="/clientlist" className="menu-link">
@@ -119,14 +120,16 @@ const Sidebar = () => {
                 <span className="menu-link-text">Client List</span>
               </Link>
             </li> */}
-            <li className="menu-item">
+            {/* <li className="menu-item">
               <Link to="/" className="menu-link">
                 <span className="menu-link-icon">
                   <MdOutlineMessage size={18} />
                 </span>
                 <span className="menu-link-text">Queries</span>
               </Link>
-            </li>
+            </li> */}
+
+
           </ul>
         </div>
 

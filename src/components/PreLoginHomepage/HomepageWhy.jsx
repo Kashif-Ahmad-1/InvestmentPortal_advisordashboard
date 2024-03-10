@@ -1,5 +1,9 @@
-// import React from "react";
-// import {w1, w2, w3, w4} from './../assest/';
+
+import w1 from './../../assest/images/w1.png'
+import w2 from './../../assest/images/w2.png'
+import w3 from './../../assest/images/w3.png'
+import w4 from './../../assest/images/w4.png'
+
 function HomepageWhy(){
     return(
         <section className="why_section layout_padding">
@@ -12,7 +16,7 @@ function HomepageWhy(){
           <div className="why_container">
             <div className="box">
               <div className="img-box">
-                <img src="./src/assest/images/w1.png" alt="" />
+                <img src={w1} alt="" />
               </div>
               <div className="detail-box">
                 <h5>
@@ -24,9 +28,9 @@ function HomepageWhy(){
                 </p>
               </div>
             </div>
-            <div className="box">
+            {/* <div className="box">
               <div className="img-box">
-                <img src="./src/assest/images/w1.png" alt="" />
+                <img src={w2} alt="" />
               </div>
               <div className="detail-box">
                 <h5>
@@ -37,10 +41,10 @@ function HomepageWhy(){
                   Tempore laborum nesciunt ut veniam, nemo officia ullam repudiandae repellat veritatis unde reiciendis possimus animi autem natus
                 </p>
               </div>
-            </div>
+            </div> */}
             <div className="box">
               <div className="img-box">
-                <img src="./../assest/images/w1.png" alt="" />
+                <img src={w3} alt="" />
               </div>
               <div className="detail-box">
                 <h5>
@@ -54,7 +58,7 @@ function HomepageWhy(){
             </div>
             <div className="box">
               <div className="img-box">
-                <img src="./src/assest/images/w1.png" alt="" />
+                <img src={w4} alt="" />
               </div>
               <div className="detail-box">
                 <h5>
