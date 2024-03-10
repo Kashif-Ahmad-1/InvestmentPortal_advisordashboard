@@ -1,5 +1,6 @@
 .content-area-charts {
   display: grid;
+  align-items: center;
   grid-template-columns: 2fr 1fr;
   gap: 16px;
 
@@ -81,6 +82,7 @@
   border-radius: 5px;
   box-shadow: var(--light-shadow1);
   background: var(--secondary-color);
+  // background: #ffffff;
 
   @media (max-width: 768px) {
     padding: 12px;

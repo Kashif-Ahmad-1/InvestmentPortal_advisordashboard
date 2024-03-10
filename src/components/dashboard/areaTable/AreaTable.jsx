@@ -1,32 +1,38 @@
 import  { useState, useEffect } from 'react';
-import AreaTableAction from "./AreaTableAction";
 import "./AreaTable.scss";
 
 const TABLE_HEADS = [
-  "Products",
+  "Client Name",
   "Order ID",
+  "Plan ID",
   "Date",
-  "Customer name",
-  "Status",
-  "Amount",
-  "Action",
+  "Invested Amount",
 ];
+
+const formatDate = (dateString) => {
+  const options = { day: '2-digit', month: '2-digit', year: 'numeric' };
+  const formattedDate = new Date(dateString).toLocaleDateString(undefined, options);
+  return formattedDate;
+};
 
 const AreaTable = () => {
   const [tableData, setTableData] = useState([]);
 
+
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('./purchase.json'); // Assuming the JSON file is named purchase.json and placed in the public folder
+        const response = await fetch('http://localhost:8000/api/v1/advisor/get-latest-transactions-of-own-plans', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          credentials: 'include'
+        }); // Assuming the JSON file is named purchase.json and placed in the public folder
         const jsonData = await response.json();
-        setTableData(jsonData);
+        setTableData(jsonData.transactions);
       } 
       
-      // {
-      //   const response = await axios.get('http://localhost:5000/api/data'); // api link
-      //   setData(response.data);
-      // }
 
       catch (error) {
         console.error('Error fetching data:', error);
@@ -52,23 +58,12 @@ const AreaTable = () => {
           <tbody>
             {tableData.map((purchase) => {
               return (
-                <tr key={purchase.id}>
-                  <td>{purchase.name}</td>
-                  <td>{purchase.order_id}</td>
-                  <td>{purchase.date}</td>
-                  <td>{purchase.customer}</td>
-                  <td>
-                    <div className="dt-status">
-                      <span
-                        className={`dt-status-dot dot-${purchase.status}`}
-                      ></span>
-                      <span className="dt-status-text">{purchase.status}</span>
-                    </div>
-                  </td>
-                  <td>${purchase.amount.toFixed(2)}</td> {/* Corrected variable name */}
-                  <td className="dt-cell-action">
-                    <AreaTableAction />
-                  </td>
+                <tr key={purchase._id}>
+                  <td>{purchase.clientName}</td>
+                  <td>{purchase._id}</td>
+                  <td>{purchase.planId}</td>
+                  <td>{formatDate(purchase.createdAt)}</td>
+                  <td>{purchase.investedAmount}</td>
                 </tr>
               );
             })}
@@ -77,6 +72,7 @@ const AreaTable = () => {
       </div>
     </section>
   );
+  
 };
 
 export default AreaTable;

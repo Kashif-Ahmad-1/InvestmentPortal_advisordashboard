@@ -19,7 +19,9 @@ import { Link } from "react-router-dom";
 import "./Sidebar.scss";
 import { SidebarContext } from "../../context/SidebarContext";
 // import Clientlist from '../dashboard/client/clientlist';
-
+import Logo from "../Logo/Logo";
+import { Box, Link as Anchor, Divider } from "@chakra-ui/react"
+import styles from "./../Layout/Layout.module.css"
 
 const Sidebar = () => {
   const { theme } = useContext(ThemeContext);
@@ -51,8 +53,8 @@ const Sidebar = () => {
     >
       <div className="sidebar-top">
         <div className="sidebar-brand">
-          <img src={theme === LIGHT_THEME ? LogoBlue : LogoWhite} alt="" />
-          <span className="sidebar-brand-text">inVEST</span>
+        <Box className={styles.logo} ><Logo size='1.5rem' /></Box>
+          {/* <span className="sidebar-brand-text">inVEST</span> */}
         </div>
         <button className="sidebar-close-btn" onClick={closeSidebar}>
           <MdOutlineClose size={24} />
@@ -62,7 +64,7 @@ const Sidebar = () => {
         <div className="sidebar-menu">
           <ul className="menu-list">
             <li className="menu-item">
-              <Link to="/" className="menu-link active">
+              <Link to="/advisor_dashboard" className="menu-link active">
                 <span className="menu-link-icon">
                   <MdOutlineGridView size={18} />
                 </span>

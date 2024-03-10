@@ -23,6 +23,10 @@ import {
   
 } from './components';
 
+
+
+
+import ProfilePage from "./components/ClientDashboard/Profile Page/Profilepage";
 import BaseLayout from "./BaseLayout/BaseLayout";
 import { Dashboard } from "./screens";
 import { ThemeContext } from "./context/ThemeContext";
@@ -66,6 +70,8 @@ function App() {
           <Route path="wallet" element={<Wallet />} />
           <Route path="news" element={<News />} />
           <Route path="investments" element={<Investments />} />
+          <Route path="profile" element={<ProfilePage />} />
+         
         
         </Route>
 
