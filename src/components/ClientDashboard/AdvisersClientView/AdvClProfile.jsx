@@ -1,9 +1,9 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-// import plans from "../Plans/plans.json";
+import plans from "./plans.json";
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css';
-// import PlanCard from '../Plans/FlipingCard';
+import PlanCard from './FlipingCard';
 import dummy from './grapghup.png'
 import advidata from "./advi.json";
 

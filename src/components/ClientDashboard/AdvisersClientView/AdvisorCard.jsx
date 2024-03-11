@@ -1,5 +1,5 @@
 import React from 'react';
-// import "../Plans/Plans.css";
+import "./Plans.css";
 
 const AdvisorCard = ({ advisor }) => {
   return (

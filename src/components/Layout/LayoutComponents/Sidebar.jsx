@@ -27,7 +27,7 @@ function Sidebar() {
                     <NavLink to={"/investments"}><li><BsBarChartLine /><span>Investments</span></li></NavLink>
                     <NavLink to={"/wallet"}><li><BiWallet /><span>Wallet</span></li></NavLink>
                     <NavLink to={"/news"}><li><HiOutlineNewspaper /><span>News</span></li></NavLink>
-                    <NavLink to={"/profile"}><li><HiOutlineNewspaper /><span>Profile</span></li></NavLink>
+                    <NavLink to={"/advprofile"}><li><HiOutlineNewspaper /><span>AdvProfile</span></li></NavLink>
                     
                     
                 </ul>
