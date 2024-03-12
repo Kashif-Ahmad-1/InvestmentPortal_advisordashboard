@@ -19,11 +19,11 @@ function Overview() {
                     <StockTable w='100%' h='400px' data={trendingStocks} type='trending' title='Trending Stocks' />
                 </GridItem>
                 <GridItem className={styles.rightGrid}>
-                    <Box display='flex' gap='20px'>
+                    {/* <Box display='flex' gap='20px'>
                         <Balance />
                         <PieChart />
-                    </Box>
-                    <BreakingNews h='620px' />
+                    </Box> */}
+                    <BreakingNews h='840px' />
                 </GridItem>
             </Grid>
         </>

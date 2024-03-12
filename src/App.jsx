@@ -24,7 +24,7 @@ import {
 } from './components';
 
 
-import AdvClView from "./components/ClientDashboard/AdvisersClientView/AdvClView";
+
 import BaseLayout from "./BaseLayout/BaseLayout";
 import { Dashboard } from "./screens";
 import { ThemeContext } from "./context/ThemeContext";
@@ -68,7 +68,7 @@ function App() {
           <Route path="wallet" element={<Wallet />} />
           <Route path="news" element={<News />} />
           <Route path="investments" element={<Investments />} />
-          <Route path="advprofile" element={<AdvClView />} />
+         
          
          
         

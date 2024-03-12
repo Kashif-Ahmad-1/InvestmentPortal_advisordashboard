@@ -26,7 +26,7 @@ function News() {
                                         news.slice(0, 3).map((news, index) => {
                                             return (
                                                 <GridItem className='styles.gridTopNews' key={index} borderRadius={8} colSpan={index === 0 ? 2 : 1} bg={news.multimedia === null ? 'rgba(0, 0, 0, 0.15)' : `url(${news.multimedia[0].url})`} bgRepeat="no-repeat" bgSize='cover' bgPosition='center' display='flex' alignItems='end' textAlign='left'>
-                                                    <a href={news.short_url} target="_blank" rel="noopener noreferrer" style={{ width: '100%' }}>
+                                                    <a href={news.url} target="_blank" rel="noopener noreferrer" style={{ width: '100%' }}>
                                                         <Box borderRadius='0 0 8px 8px' backgroundColor='rgba(0, 0, 0, 0.70)' p='20px'>
                                                             <Heading as='h3' color='#fff'>{news.title}</Heading>
                                                         </Box>

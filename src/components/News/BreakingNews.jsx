@@ -31,7 +31,7 @@ function BreakingNews({ w, h }) {
                                     news.slice(0, 15).map((news, index) => {
                                         return (
                                             <GridItem key={index} colSpan={1} bg={news.multimedia === null ? 'rgba(0, 0, 0, 0.15)' : `url(${news.multimedia[0].url})`} bgRepeat="no-repeat" bgSize='cover' bgPosition='center' borderRadius={8}>
-                                                <a href={news.short_url} target="_blank" rel="noopener noreferrer" style={{ width: '100%' }}>
+                                                <a href={news.url} target="_blank" rel="noopener noreferrer" style={{ width: '100%' }}>
                                                     <Box h='150px' backgroundColor='rgba(0, 0, 0, 0.7)' display='flex' alignItems='center' textAlign='left' p='20px' borderRadius={8} >
                                                         <Heading as='h3' color='#fff' >{news.title}</Heading>
                                                     </Box>
