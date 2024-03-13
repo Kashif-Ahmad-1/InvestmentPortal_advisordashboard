@@ -29,22 +29,22 @@ const Arraay = ({ plans }) => {
   return (
     <div>
       <h2 style={{marginBottom:"1rem"}}>Top Rated Plans</h2>
-      <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={3000}>
+      {/* <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={3000}> */}
         {topRatedPlans.map((plan, index) => (
           <div key={index}>
             <PlanCard plan={plan} />
           </div>
         ))}
-      </Carousel>
+      {/* </Carousel> */}
 
       <h2 style={{marginBottom:"1rem"}}>Most Ordered Plans</h2>
-      <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={3000}>
+      {/* <Carousel responsive={responsive} infinite={true} autoPlay={true} autoPlaySpeed={3000}> */}
         {mostOrderedPlans.map((plan, index) => (
           <div key={index}>
             <PlanCard plan={plan} />
           </div>
         ))}
-      </Carousel>
+      {/* </Carousel> */}
     </div>
   );
 };
